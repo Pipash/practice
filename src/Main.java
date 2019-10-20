@@ -22,8 +22,14 @@ public class Main {
         //PermCheck check = new PermCheck();
         //int[] A = new int[]{};
         //FrogRiverOne jmp = new FrogRiverOne();
-        MissingInteger missingInteger = new MissingInteger();
-        int[] A = new int[]{1, 3, 6, 4, 1, 2};
-        System.out.println(missingInteger.missingInt(A));
+        //MissingInteger missingInteger = new MissingInteger();
+        //int[] A = new int[]{1, 3, 6, 4, 1, 2};
+        /*GenomicRangeQuery range = new GenomicRangeQuery();
+        String str = "CAGCCTA";
+        int[] P = {2,5,0};
+        int[] Q = {4,5,6};*/
+        MinAvgTwoSlice avg = new MinAvgTwoSlice();
+        int[] A = {4,2,2,5,1,5,8};
+        System.out.println(avg.minAvg(A));
     }
 }
