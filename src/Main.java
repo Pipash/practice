@@ -28,8 +28,12 @@ public class Main {
         String str = "CAGCCTA";
         int[] P = {2,5,0};
         int[] Q = {4,5,6};*/
-        MinAvgTwoSlice avg = new MinAvgTwoSlice();
-        int[] A = {4,2,2,5,1,5,8};
-        System.out.println(avg.minAvg(A));
+        //MinAvgTwoSlice avg = new MinAvgTwoSlice();
+        //LinkedList ls = new LinkedList();
+        SeatReservation str = new SeatReservation();
+        //int[] A = {1,4,-1,3,2};
+        int n = 2;
+        String s = "1A 2F 1C";
+        System.out.println(str.solution(n, s));
     }
 }
