@@ -30,10 +30,15 @@ public class Main {
         int[] Q = {4,5,6};*/
         //MinAvgTwoSlice avg = new MinAvgTwoSlice();
         //LinkedList ls = new LinkedList();
-        SeatReservation str = new SeatReservation();
-        //int[] A = {1,4,-1,3,2};
-        int n = 2;
-        String s = "1A 2F 1C";
-        System.out.println(str.solution(n, s));
+        //CountDiv countDiv = new CountDiv();
+        //MaxProductOfThree maxProductOfThree = new MaxProductOfThree();
+        //Distinct distinct = new Distinct();
+        Triangle triangle = new Triangle();
+        //int[] A = {10,2,5,1,8,20};
+        int[] A = {10,50,5,1};
+        //int n = 2;
+        //String s = "1A 2F 1C";
+        //float mod = 2/4;
+        System.out.println(triangle.findTriplet(A));
     }
 }
