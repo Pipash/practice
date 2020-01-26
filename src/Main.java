@@ -34,14 +34,15 @@ public class Main {
         //MaxProductOfThree maxProductOfThree = new MaxProductOfThree();
         //Distinct distinct = new Distinct();
         //Fish fish = new Fish();
-        Dominator dominator = new Dominator();
-        int[] A = {1, 2, 1};
+        //Dominator dominator = new Dominator();
+        MaxProfit maxProfit = new MaxProfit();
+        int[] A = {5, 4, 3, 2, 1};
         //int[] A = {4,3,2,1,5};
         //int[] B = {0,1,0,0,0};
         //int n = 2;
         //Brackets brackets = new Brackets();
         //String s = "([)()]";
         //float mod = 2/4;
-        System.out.println(dominator.solution(A));
+        System.out.println(maxProfit.solution(A));
     }
 }

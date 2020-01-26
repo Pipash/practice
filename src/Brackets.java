@@ -1,7 +1,7 @@
-import org.jetbrains.annotations.NotNull;
+
 
 public class Brackets {
-    public int isNested(@NotNull String S) {
+    public int isNested(String S) {
         // S = "[()}"
         int properlyNested = 1;
         if (S.length() == 0) {
