@@ -7,7 +7,9 @@ public class MaxProfit {
         }
 
         int maxValue, minValue, maxValuePosition, minValuePosition;
-        maxValue = minValue = maxValuePosition = minValuePosition = 0;
+        maxValue = maxValuePosition = 0;
+        minValue = A[n-1];
+        minValuePosition = n-1;
 
         for (int i = n-1; i >= 0; i--) {
             if (A[i] > maxValue) {
