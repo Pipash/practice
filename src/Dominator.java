@@ -13,7 +13,7 @@ public class Dominator {
             hashMap.put(A[i], i);
         }
         Arrays.sort(A);
-        int position = (int) Math.ceil(n/2.0);
+        int position = n/2;
         int count = 0;
         for (int i = 0; i < n; i++) {
             if (A[i] == A[position]) {

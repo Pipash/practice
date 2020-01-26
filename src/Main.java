@@ -35,7 +35,7 @@ public class Main {
         //Distinct distinct = new Distinct();
         //Fish fish = new Fish();
         Dominator dominator = new Dominator();
-        int[] A = {3,4,3,2,3,-1,3,3};
+        int[] A = {1, 2, 1};
         //int[] A = {4,3,2,1,5};
         //int[] B = {0,1,0,0,0};
         //int n = 2;
