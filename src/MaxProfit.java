@@ -8,25 +8,31 @@ public class MaxProfit {
 
         int maxValue, minValue, maxValuePosition, minValuePosition;
         // maxValue = maxValuePosition = 0;
-        maxValue = minValue = A[n-1];
-        maxValuePosition = minValuePosition = n-1;
+        maxValue = A[n-1]; maxValuePosition = n-1;
+        minValue = A[n-1]; minValuePosition = n-1;
 
         for (int i = n-1; i >= 0; i--) {
-            if (A[i] > maxValue && maxValuePosition >= minValuePosition) {
-                maxValue = A[i];
-                maxValuePosition = i;
+            if (A[i] > maxValue) {
+                maxValue = minValue= A[i];
+                maxValuePosition = minValuePosition= i;
+                //System.out.println(maxValuePosition);
             }
 
-            if (A[i] < minValue && minValuePosition <= maxValuePosition) {
+            if (A[i] < minValue) {
                 minValue = A[i];
                 minValuePosition = i;
             }
-            System.out.println(maxValuePosition);
-            System.out.println(minValuePosition);
+
+            int profit = maxValue - minValue;
+            if (profit > maxProfit) {
+                maxProfit = profit;
+            }
+
+            //System.out.println(minValuePosition);
         }
-        System.out.println(maxValuePosition);
-        System.out.println(minValuePosition);
-        maxProfit = maxValue - minValue;
+        //System.out.println(maxValuePosition);
+        //System.out.println(minValuePosition);
+        //maxProfit = maxValue - minValue;
 
         return maxProfit;
     }

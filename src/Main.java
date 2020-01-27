@@ -36,7 +36,10 @@ public class Main {
         //Fish fish = new Fish();
         //Dominator dominator = new Dominator();
         MaxProfit maxProfit = new MaxProfit();
-        int[] A = {5, 4, 3, 2, 1};
+        //[8, 9, 3, 6, 1, 2]
+        //{5,4,3,2,1}
+        //int[] A = {23171, 21011, 21123, 21366, 21367};
+        int[] A = {5,4,3,2,1};
         //int[] A = {4,3,2,1,5};
         //int[] B = {0,1,0,0,0};
         //int n = 2;
