@@ -57,9 +57,11 @@ public class Main {
         ArrayList<String> strlist2 = new ArrayList<>();
         strlist2.addAll(Arrays.asList(strArr2));*/
 
-        DayCountArray dayCountArray = new DayCountArray();
-        int[][] arr = {{1,0,0,1,1}, {0,0,1,1,0}, {0,0,0,0,1},{0,0,1,0,0}};
+        //DayCountArray dayCountArray = new DayCountArray();
+        //int[][] arr = {{1,0,0,1,1}, {0,0,1,1,0}, {0,0,0,0,1},{0,0,1,0,0}};
 
-        System.out.println(dayCountArray.numberOfDays(arr));
+        CountFactors countFactors = new CountFactors();
+
+        System.out.println(countFactors.factor(36));
     }
 }
