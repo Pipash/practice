@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
     String str;
 
@@ -35,17 +38,28 @@ public class Main {
         //Distinct distinct = new Distinct();
         //Fish fish = new Fish();
         //Dominator dominator = new Dominator();
-        MaxProfit maxProfit = new MaxProfit();
+        //MaxProfit maxProfit = new MaxProfit();
         //[8, 9, 3, 6, 1, 2]
         //{5,4,3,2,1}
         //int[] A = {23171, 21011, 21123, 21366, 21367};
-        int[] A = {5,4,3,2,1};
+        //int[] A = {5,4,3,2,1};
         //int[] A = {4,3,2,1,5};
         //int[] B = {0,1,0,0,0};
         //int n = 2;
         //Brackets brackets = new Brackets();
         //String s = "([)()]";
         //float mod = 2/4;
-        System.out.println(maxProfit.solution(A));
+        /*StrMatch strMatch = new StrMatch();
+        String[] strArr = {"anancell", "betecellular", "cetracular", "deltacellular", "eurocell"};
+        ArrayList<String> strList = new ArrayList<>();
+        strList.addAll(Arrays.asList(strArr));
+        String[] strArr2 = {"Best service anancell", "betecellular has great", "anancell provide much better"};
+        ArrayList<String> strlist2 = new ArrayList<>();
+        strlist2.addAll(Arrays.asList(strArr2));*/
+
+        DayCountArray dayCountArray = new DayCountArray();
+        int[][] arr = {{1,0,0,1,1}, {0,0,1,1,0}, {0,0,0,0,1},{0,0,1,0,0}};
+
+        System.out.println(dayCountArray.numberOfDays(arr));
     }
 }
