@@ -60,8 +60,12 @@ public class Main {
         //DayCountArray dayCountArray = new DayCountArray();
         //int[][] arr = {{1,0,0,1,1}, {0,0,1,1,0}, {0,0,0,0,1},{0,0,1,0,0}};
 
-        CountFactors countFactors = new CountFactors();
+        //CountFactors countFactors = new CountFactors();
+        //countFactors.factor(36)
+        //FlagsOnPick flags = new FlagsOnPick();
+        //int[] A = {0, 0, 0, 0, 0, 1, 0, 1, 0, 1};
+        MinPerimeterRectangle rectangle = new MinPerimeterRectangle();
 
-        System.out.println(countFactors.factor(36));
+        System.out.println(rectangle.perimeter(30));
     }
 }
