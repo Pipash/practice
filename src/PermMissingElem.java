@@ -9,8 +9,8 @@ public class PermMissingElem {
         Arrays.sort(A);
         //System.out.println(A.length);
         int j = 1;
-        for (int i = 0; i < A.length; i++) {
-            if (A[i] != j) {
+        for (int value : A) {
+            if (value != j) {
                 missing = j;
             }
             j++;

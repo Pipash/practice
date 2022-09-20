@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+import AmazonCodingPractice.FlowerPattern;
+import AmazonCodingPractice.TwoSum;
 
 public class Main {
     String str;
@@ -64,8 +64,39 @@ public class Main {
         //countFactors.factor(36)
         //FlagsOnPick flags = new FlagsOnPick();
         //int[] A = {0, 0, 0, 0, 0, 1, 0, 1, 0, 1};
-        MinPerimeterRectangle rectangle = new MinPerimeterRectangle();
+        //MinPerimeterRectangle rectangle = new MinPerimeterRectangle();
+        //PatternMatch pattern = new PatternMatch();
+        //FirstReverse reverse = new FirstReverse();
+        //int[][] arr = {{1,1,1,0,0,0}, {0,1,0,0,0,0}, {1,1,1,0,0,0}, {0,0,2,4,4,0}, {0,0,0,2,0,0}, {0,0,1,2,4,0}};
+        //TwoDArray twoDArray = new TwoDArray();
 
-        System.out.println(rectangle.perimeter(30));
+        //System.out.println(twoDArray.maxTotal(arr));
+
+        /*Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        HashMap<String, Integer> contacts = new HashMap<>();
+        for(int i = 0; i < n; i++){
+            String name = in.next();
+            int phone = in.nextInt();
+            // Write code here
+            contacts.put(name, phone);
+        }
+        while(in.hasNext()){
+            String s = in.next();
+            // Write code here
+            if (contacts.containsKey(s)) {
+                System.out.println(s+"="+contacts.get(s));
+            } else {
+                System.out.println("Not found");
+            }
+        }
+        in.close();*/
+
+        //Pangram pangram = new Pangram();
+        //System.out.println(pangram.isItPangram("We promptly judged antique ivory buckles for the next prize."));
+        //FlowerPattern flowerPattern = new FlowerPattern(3);
+        //TwoSum twoSum = new TwoSum();
+        //MergeSort mergeSort = new MergeSort();
+        ClosestSum closestSum = new ClosestSum();
     }
 }

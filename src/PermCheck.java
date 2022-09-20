@@ -20,8 +20,8 @@ public class PermCheck {
             j++;
         }
 
-        for (int i = 0; i < numbers.size(); i++) {
-            if (!hashedA.containsKey(numbers.get(i))) {
+        for (Integer number : numbers) {
+            if (!hashedA.containsKey(number)) {
                 permutaion = 0;
                 break;
             }
