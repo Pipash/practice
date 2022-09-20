@@ -1,4 +1,5 @@
 import AmazonCodingPractice.FlowerPattern;
+import AmazonCodingPractice.MaxUnitOnTruck;
 import AmazonCodingPractice.TwoSum;
 
 public class Main {
@@ -97,6 +98,7 @@ public class Main {
         //FlowerPattern flowerPattern = new FlowerPattern(3);
         //TwoSum twoSum = new TwoSum();
         //MergeSort mergeSort = new MergeSort();
-        ClosestSum closestSum = new ClosestSum();
+        //ClosestSum closestSum = new ClosestSum();
+        MaxUnitOnTruck maxUnitOnTruck = new MaxUnitOnTruck();
     }
 }
