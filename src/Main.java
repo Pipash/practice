@@ -1,7 +1,11 @@
-import AmazonCodingPractice.FlowerPattern;
-import AmazonCodingPractice.LowestCommonAncestor;
-import AmazonCodingPractice.MaxUnitOnTruck;
-import AmazonCodingPractice.TwoSum;
+import AmazonCodingPractice.*;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Main {
     String str;
@@ -101,6 +105,38 @@ public class Main {
         //MergeSort mergeSort = new MergeSort();
         //ClosestSum closestSum = new ClosestSum();
         //MaxUnitOnTruck maxUnitOnTruck = new MaxUnitOnTruck();
-        LowestCommonAncestor lca = new LowestCommonAncestor();
+        //LowestCommonAncestor lca = new LowestCommonAncestor();
+        //DFSAlgo dfsAlgo = new DFSAlgo();
+        //NumberOfIsland numberOfIsland = new NumberOfIsland();
+        //BFSAlgo bfsAlgo  = new BFSAlgo();
+        /*Tests child1 = new TestsChild();
+        TestsChild child2 = new TestsChild();
+        Tests parent = new Tests();
+        System.out.println("child1 "+child1.str()+" child2 "+child2.str() + " parent "
+                +parent.str() + " ch1 "+ child1.str2() + " ch2 "+ child2.str2());*/
+        //new TestsChild();
+        String st1 = "hello";
+        String st2 = "hello";
+        String st3 = new String("hello");
+        /*System.out.println(st1 == st2);
+        System.out.println(st1.equals(st2));
+        System.out.println(st1== st3);
+        System.out.println(st1.equals(st3));*/
+
+        List<String> a = new LinkedList<>();
+        a.add("a");
+        a.add("b");
+        a.add("c");
+        /*System.out.println(a.get(1));
+        a.remove("b");
+        System.out.println(a.get(1));*/
+
+        //System.out.println("1"+2+3);
+        String name = "annuha";
+        String[] nStr = name.split("");
+        Map<String, Long> conting = Arrays.stream(nStr).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        System.out.println(conting);
+
+        System.out.println(Runtime.getRuntime().availableProcessors());
     }
 }
