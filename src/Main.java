@@ -1,9 +1,7 @@
 import AmazonCodingPractice.*;
 
-import java.util.Arrays;
+import java.util.*;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -115,21 +113,21 @@ public class Main {
         System.out.println("child1 "+child1.str()+" child2 "+child2.str() + " parent "
                 +parent.str() + " ch1 "+ child1.str2() + " ch2 "+ child2.str2());*/
         //new TestsChild();
-        String st1 = "hello";
+        /*String st1 = "hello";
         String st2 = "hello";
         String st3 = new String("hello");
-        /*System.out.println(st1 == st2);
+        *//*System.out.println(st1 == st2);
         System.out.println(st1.equals(st2));
         System.out.println(st1== st3);
-        System.out.println(st1.equals(st3));*/
+        System.out.println(st1.equals(st3));*//*
 
         List<String> a = new LinkedList<>();
         a.add("a");
         a.add("b");
         a.add("c");
-        /*System.out.println(a.get(1));
+        *//*System.out.println(a.get(1));
         a.remove("b");
-        System.out.println(a.get(1));*/
+        System.out.println(a.get(1));*//*
 
         //System.out.println("1"+2+3);
         String name = "annuha";
@@ -137,6 +135,54 @@ public class Main {
         Map<String, Long> conting = Arrays.stream(nStr).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         System.out.println(conting);
 
-        System.out.println(Runtime.getRuntime().availableProcessors());
+        System.out.println(Runtime.getRuntime().availableProcessors());*/
+        String s = "abc";
+        printPermutn(s, "", "abcd", "");
+        //System.out.println(st);
+
+    }
+
+    static void printPermutn(String str, String ans, String str2, String returnStr)
+    {
+
+        ArrayList<String> strList = new ArrayList<>();
+
+        // If string is empty
+        //abc acb bac bca cab cba
+        //System.out.println(str);
+        if (str.length() == 0) {
+            if (str2.contains(ans) && returnStr.length() == 0) {
+                //System.out.println("true");
+                returnStr = "true";
+
+                //return;
+            }
+            //System.out.println("false");
+            //strList.add(ans);
+            //System.out.print(ans + " ");
+            //return;
+        }
+
+        for (int i = 0; i < str.length(); i++) {
+
+            // ith character of str
+            char ch = str.charAt(i);
+
+            // Rest of the string after excluding
+            // the ith character
+            String ros = str.substring(0, i) +
+                    str.substring(i + 1);
+
+            // Recursive call
+            printPermutn(ros, ans + ch, str2, returnStr);
+
+
+        }
+
+        if (returnStr.contains("true")) {
+            System.out.println(returnStr);
+        }
+
+        //return returnStr;
     }
 }
