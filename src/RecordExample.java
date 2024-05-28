@@ -1,3 +1,4 @@
+package src;
 
 import java.util.Objects;
 
@@ -43,7 +44,7 @@ class EmployeeDTO {
     }
 }
 
-record EmployeeRecord(Integer empId, String empName, Integer empSalary) {
+/*record EmployeeRecord(Integer empId, String empName, Integer empSalary) {
     public String toLowerCase(String name) {
         return name.toLowerCase();
     }
@@ -51,13 +52,13 @@ record EmployeeRecord(Integer empId, String empName, Integer empSalary) {
     public static String toUpperCase(String name) {
         return name.toUpperCase();
     }
-}
+}*/
 
 public class RecordExample {
     public static void main(String[] args) {
         EmployeeDTO employeeDTO = new EmployeeDTO(1, "Kadir", 90000);
         System.out.println(employeeDTO.getEmpName()+" "+employeeDTO.getEmpSalary()+" BDT");
-        EmployeeRecord employeeRecord = new EmployeeRecord(2, "Kabir", 100000);
-        System.out.println(employeeRecord.empName()+" "+employeeRecord.empSalary()+" BDT");
+        //EmployeeRecord employeeRecord = new EmployeeRecord(2, "Kabir", 100000);
+        //System.out.println(employeeRecord.empName()+" "+employeeRecord.empSalary()+" BDT");
     }
 }
