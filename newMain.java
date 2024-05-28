@@ -3,7 +3,7 @@ public class newMain {
         // Java program to print all the permutations
 // of the given string
         String s = "abb";
-        printPermutn(s, "");
+        //printPermutn(s, "");
 
     }
 
